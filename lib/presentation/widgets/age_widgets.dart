@@ -1,3 +1,4 @@
+import 'package:calculate/presentation/app/constants/app_paddings.dart';
 import 'package:calculate/presentation/app/constants/app_text.dart';
 import 'package:calculate/presentation/app/theme/app_theme.dart';
 import 'package:flutter/material.dart';
@@ -28,13 +29,13 @@ class _AgeWidgets extends State<AgeWidgets> {
               AppTexts.age,
               style: AppThemes.fs30cw,
             ),
-            SizedBoxWidget.h20,
+            SizedBoxWidget.h14,
             Text(
               age.toString(),
               style: AppThemes.fs40cwfWb,
             ),
             Padding(
-              padding: const EdgeInsets.all(20.0),
+              padding: AppPaddings.p30,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [

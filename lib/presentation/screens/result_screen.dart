@@ -61,7 +61,7 @@ class ResultPage extends StatelessWidget {
                     textBaseline: TextBaseline.alphabetic,
                     children: const [
                       Text(AppTexts.normalBmiRangeValue,
-                          style: AppThemes.fs25cw),
+                          style: AppThemes.fs25cw,),
                       Text(AppTexts.kv, style: AppThemes.fs15cw),
                     ],
                 ),

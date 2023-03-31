@@ -1,3 +1,4 @@
+import 'package:calculate/presentation/app/constants/app_paddings.dart';
 import 'package:calculate/presentation/app/constants/sized_box.dart';
 import 'package:calculate/presentation/app/theme/app_theme.dart';
 import 'package:calculate/presentation/app/utilites/string_method.dart';
@@ -39,6 +40,7 @@ class _HomePageState extends State<HomePage> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 const Text(AppTexts.height, style: AppThemes.fs40cw),
+                SizedBoxWidget.h10,
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.baseline,
@@ -51,6 +53,7 @@ class _HomePageState extends State<HomePage> {
                     )
                   ],
                 ),
+                SizedBoxWidget.h14,
                 Slider(
                   min: 130,
                   max: 220,
@@ -79,7 +82,7 @@ class _HomePageState extends State<HomePage> {
                           AppTexts.weight,
                           style: AppThemes.fs30cw,
                         ),
-                        SizedBoxWidget.h20,
+                        SizedBoxWidget.h14,
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.baseline,
@@ -96,7 +99,7 @@ class _HomePageState extends State<HomePage> {
                           ],
                         ),
                         Padding(
-                          padding: const EdgeInsets.all(20.0),
+                          padding: AppPaddings.p30,
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
